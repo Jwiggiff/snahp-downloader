@@ -42,7 +42,7 @@ def main(input_file, num_per_download, output_path):
 		url_file.write(urljoin(url, link.get('href')) + "\n")
 		if i == num_per_download:
 			url_file.close()
-			os.system('aria2c -d \''+output_path+'\' -i '+url_file_name)
+			os.system('aria2c -d "'+output_path+'" -i '+url_file_name)
 			i = 0
 			url_file = open(url_file_name, 'w')
 		else:
