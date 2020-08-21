@@ -51,7 +51,7 @@ def main(input_file, num_per_download, output_path):
 	driver.close()
 	driver.quit()
 	url_file.close()
-	os.system('aria2c -d \''+output_path+'\' -i '+url_file_name)
+	os.system('aria2c -d "'+output_path+'" -i '+url_file_name)
 	os.remove(url_file_name)
 
 if __name__ == '__main__':
