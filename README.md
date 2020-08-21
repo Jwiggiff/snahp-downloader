@@ -1,6 +1,12 @@
 # Snahp.it Downloader
 A python script to download files from snahp.it in batch.
 
+## Contents
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Usage](#usage)
+  * [Examples](#examples)
+
 ## Requirements
 - [ChromeDriver](https://chromedriver.chromium.org/)
 - [aria2](https://aria2.github.io/)
@@ -14,8 +20,7 @@ A python script to download files from snahp.it in batch.
 ## Usage
 #### Help command:
     python downloader.py --help
-
-## Examples
+### Examples
 #### Download links in `links.txt`
     python downloader.py links.txt
 #### Download links in `links.txt` to `output` directory
